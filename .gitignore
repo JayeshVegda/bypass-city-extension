@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.zip
+*.crx
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Test results
+*.log
+playwright-report/
+test-results/
+junit.xml
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+.history/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+

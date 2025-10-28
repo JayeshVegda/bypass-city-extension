@@ -1,0 +1,15 @@
+{
+  "extensionName": {
+    "message": "Bypass.city - Link Bypasser",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Instantly bypass link shorteners via bypass.city with a simple right-click. Get direct links from Linkvertise and other supported sites.",
+    "description": "Extension description"
+  },
+  "contextMenuTitle": {
+    "message": "Bypass with bypass.city",
+    "description": "Context menu item title"
+  }
+}
+

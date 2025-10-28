@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bypass.city Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header with theme toggle -->
+    <header>
+      <div class="header-content">
+        <h1>
+          <img src="/icons/icon128.png" alt="" class="logo-icon" onerror="this.style.display='none'">
+          <span class="logo-text">bypass.city</span>
+        </h1>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
+                  <span class="theme-icon" role="presentation">🌙</span>
+                </button>
+      </div>
+      <p class="tagline">Bypass Linkvertise & More - Instantly</p>
+    </header>
+
+    <!-- Settings Section -->
+    <section class="settings-section">
+      <div class="toggle-section">
+        <label class="toggle-label" for="smart-bypass-toggle">
+          <input type="checkbox" id="smart-bypass-toggle" class="toggle-input" aria-label="Enable auto-bypass for known ad domains">
+          <span class="toggle-slider" role="switch" aria-checked="false"></span>
+          <div class="toggle-content">
+            <span class="toggle-text">Auto-bypass known ad links</span>
+            <span id="domain-count" class="domain-count">49 domains configured</span>
+          </div>
+        </label>
+      </div>
+
+      <div id="last-bypass" class="last-bypass hidden">
+        <span class="bypass-icon">⚡</span>
+        <div>
+          <span class="bypass-label">Last bypassed:</span>
+          <span id="last-domain" class="bypass-domain"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <div class="card primary-card">
+        <div class="card-header">
+          <span class="card-icon">🚀</span>
+          <strong>Quick Bypass</strong>
+        </div>
+        <p>Right-click any link and select <strong>"Bypass with bypass.city"</strong> to instantly bypass link shorteners.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">⚙️</span>
+          <strong>How It Works</strong>
+        </div>
+        <ul class="info-list">
+          <li><span class="list-bullet">✓</span> <strong>Smart Mode:</strong> Auto-detects 49+ ad domains</li>
+          <li><span class="list-bullet">✓</span> <strong>Manual Mode:</strong> Uses bypass.city for all links</li>
+        </ul>
+      </div>
+
+      <details class="domain-details">
+        <summary class="domain-summary" role="button" aria-expanded="false">
+          <span class="summary-icon" role="presentation">📋</span>
+          <span>View Supported Domains</span>
+          <span class="summary-arrow" role="presentation">▼</span>
+        </summary>
+        <div id="domain-list" class="domain-list" role="list" aria-label="List of supported ad domains"></div>
+      </details>
+
+      <div class="action-section">
+        <a href="https://bypass.city" target="_blank" class="btn btn-primary">
+          <span>Visit bypass.city</span>
+          <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer with Author Credit -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-author">
+          Made with ❤️ by <strong>Jayesh Vegda</strong>
+        </div>
+        <a href="https://github.com/jayeshvegda" target="_blank" class="footer-github-link" title="View on GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          <span>github.com/jayeshvegda</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
