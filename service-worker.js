@@ -22,16 +22,8 @@ const KNOWN_AD_DOMAINS = [
   "socialwolvez.com", "social-unlock.com",
   "sub1s.com", "subtolink.com", "unlocknow.net",
   // URL shorteners
-  "tinyurl.com", "bit.ly", "rebrand.ly",
+  "tinyurl.com", "bit.ly", "rebrand.ly", "tinylink.onl",
   "google-url.com", "justpaste.it",
-  // Paste sites (supported by bypass.city for content extraction)
-  "pastebin.com", "pastelink.net", "pastesite.com",
-  "rentry.co", "controlc.com", "paste.work.ink",
-  "privatebin.net", "paster.so", "hastebin.com",
-  "bstlar.com", "pastedrop.com", "leakutopia.com",
-  "leakslinks.com", "goldpaster.com", "pastes.io",
-  "linkdirect.com", "n0paste.com", "pasteflash.com",
-  "leaked.tools",
   // Additional from userscript
   "thedragonslayer2.github.io", "subfinal.com"
 ];

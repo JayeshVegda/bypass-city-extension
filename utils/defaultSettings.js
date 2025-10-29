@@ -20,20 +20,13 @@ const KNOWN_AD_DOMAINS = [
   "rekonise.com", "rkns.link",
   "shorte.st", "sh.st", "gestyy.com", "destyy.com",
   "v.gd", "is.gd", "empebau.eu",
-  "tinyurl.com", "bit.ly", "rebrand.ly",
+  "tinyurl.com", "bit.ly", "rebrand.ly", "tinylink.onl",
   "google-url.com", "justpaste.it",
   // Social unlock
   "socialwolvez.com", "social-unlock.com",
   // Other services
   "thedragonslayer2.github.io",
-  // Paste sites
-  "pastebin.com", "pastelink.net", "pastesite.com",
-  "rentry.co", "controlc.com", "paste.work.ink",
-  "privatebin.net", "paster.so", "hastebin.com",
-  "bstlar.com", "pastedrop.com", "leakutopia.com",
-  "leakslinks.com", "goldpaster.com", "pastes.io",
-  "linkdirect.com", "n0paste.com", "pasteflash.com",
-  "leaked.tools"
+  // Note: paste sites removed per project policy; justpaste.it retained
 ];
 
 const DEFAULT_SETTINGS = {

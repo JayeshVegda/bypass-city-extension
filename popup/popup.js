@@ -14,15 +14,9 @@ const KNOWN_AD_DOMAINS = [
   "v.gd", "is.gd", "empebau.eu",
   "socialwolvez.com", "social-unlock.com",
   "sub1s.com", "subtolink.com", "unlocknow.net",
-  "tinyurl.com", "bit.ly", "rebrand.ly",
+  "tinyurl.com", "bit.ly", "rebrand.ly", "tinylink.onl",
   "google-url.com", "justpaste.it",
-  "pastebin.com", "pastelink.net", "pastesite.com",
-  "rentry.co", "controlc.com", "paste.work.ink",
-  "privatebin.net", "paster.so", "hastebin.com",
-  "bstlar.com", "pastedrop.com", "leakutopia.com",
-  "leakslinks.com", "goldpaster.com", "pastes.io",
-  "linkdirect.com", "n0paste.com", "pasteflash.com",
-  "leaked.tools", "thedragonslayer2.github.io", "subfinal.com"
+  "thedragonslayer2.github.io", "subfinal.com"
 ];
 
 const smartBypassToggle = document.getElementById('smart-bypass-toggle');

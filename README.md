@@ -16,11 +16,11 @@
 
 ---
 
-A privacy-first Chrome extension that automatically bypasses 60+ known ad link services and link shorteners using [bypass.city](https://bypass.city). Built with Manifest V3 for modern Chrome browsers.
+A privacy-first Chrome extension that automatically bypasses 45+ known ad link services and link shorteners using [bypass.city](https://bypass.city). Built with Manifest V3 for modern Chrome browsers.
 
 ## ✨ Features
 
-- 🚀 **Smart Auto-Bypass**: Automatically detects and bypasses 60+ known ad domains
+- 🚀 **Smart Auto-Bypass**: Automatically detects and bypasses 45+ known ad domains
 - 🎯 **Right-Click Context Menu**: Quick bypass via right-click on any link
 - 🌓 **Dark/Light Mode**: Beautiful UI with system preference detection
 - ⚡ **Instant Redirect**: Auto-redirects when navigating to ad link sites
@@ -30,14 +30,14 @@ A privacy-first Chrome extension that automatically bypasses 60+ known ad link s
 
 ## 🎯 Supported Services
 
-The extension automatically bypasses 60+ services including:
+The extension automatically bypasses 45+ services including:
 
 - **Linkvertise** & variants (linkvertise.com, linkvertise.net, link-to.net)
 - **Sub Services** (sub2get.com, sub2unlock.com, unlocknow.net)
 - **Boost Services** (boost.ink, bst.gg, mboost.me, etc.)
 - **Loot Links** (lootlinks.com, loot-links.com, etc.)
 - **URL Shorteners** (bit.ly, tinyurl.com, v.gd, etc.)
-- **Paste Sites** (pastebin.com, rentry.co, hastebin.com, etc.)
+<!-- Paste sites removed from auto-bypass per project policy -->
 
 ## 📦 Installation
 
@@ -167,7 +167,7 @@ This extension requires minimal permissions:
 ## 🌟 Features in Detail
 
 ### Smart Auto-Bypass
-- Automatically detects 60+ known ad/shortener domains
+- Automatically detects 45+ known ad/shortener domains
 - Redirects to bypass.city without user interaction
 - Can be disabled via toggle in popup
 
