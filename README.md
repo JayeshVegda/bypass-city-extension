@@ -19,9 +19,7 @@
 A privacy-first Chrome extension that automatically bypasses 45+ known ad link services and link shorteners using [bypass.city](https://bypass.city). Built with Manifest V3 for modern Chrome browsers.
 
 ## 📺 Tutorial
-
 <div align="center">
-
   <video
     src="tutorial/main.mp4"
     controls
@@ -31,12 +29,9 @@ A privacy-first Chrome extension that automatically bypasses 45+ known ad link s
     loop
     preload="metadata"
     poster="tutorial/palette.png"
-    style="max-width: 100%; height: auto; border-radius: 8px;"
+    style="max-width: 100%; height: auto; border-radius: 5px;"
   >
-    Your browser does not support the video tag. You can
-    <a href="https://user-images.githubusercontent.com/20689156/215357783-b69f4339-a681-410f-982a-44655986f0ce.mp4">download the video here</a>.
   </video>
-
 </div>
 
 ## ✨ Features
