@@ -20,16 +20,13 @@ A privacy-first Chrome extension that automatically bypasses 45+ known ad link s
 
 ## 📺 Tutorial
 
-Watch the quick tutorial (MP4):
+Watch the quick tutorial (GIF):
 
-- 👉 [View tutorial video](tutorial/tutorial.mp4)
+- 👉 ![Tutorial](tutorial/tutorial.gif)
 
 <details>
-  <summary>Inline playback (may not render on all viewers)</summary>
-
-  <video src="tutorial/tutorial.mp4" controls playsinline style="max-width:100%;border-radius:8px;border:1px solid rgba(0,0,0,.1)"></video>
-
-  If the video doesn't play inline, use the link above.
+  <summary>Alternate MP4 link (if GIF doesn’t load for you)</summary>
+  <a href="tutorial/tutorial.mp4">Download/Play MP4</a>
 </details>
 
 ## ✨ Features
