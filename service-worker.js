@@ -201,7 +201,7 @@ function createContextMenu() {
         chrome.contextMenus.create({
           id: CONTEXT_MENU_ID,
           title: chrome.i18n ? chrome.i18n.getMessage('contextMenuTitle') : 'Bypass with bypass.city',
-          contexts: ['link']
+          contexts: ['link', 'selection', 'editable']
         }, () => {
           // Check for errors after create
           if (chrome.runtime.lastError) {
@@ -279,11 +279,15 @@ function initializeSettings() {
  */
 function handleContextMenuClick(info) {
   // Validate inputs
-  if (!info || info.menuItemId !== CONTEXT_MENU_ID || !info.linkUrl) {
+  if (!info || info.menuItemId !== CONTEXT_MENU_ID) {
     return;
   }
 
-  const originalUrl = info.linkUrl;
+  // Determine URL: prefer direct link, fallback to selection text parsed as URL
+  const originalUrl = getUrlFromContext(info);
+  if (!originalUrl) {
+    return;
+  }
 
   // Validate URL is safe
   if (!isSafeUrl(originalUrl)) {
@@ -343,6 +347,32 @@ function handleContextMenuClick(info) {
       console.error('Tabs API not available');
     }
   });
+}
+
+/**
+ * Extract a usable URL from context menu info (link or selection)
+ */
+function getUrlFromContext(info) {
+  if (info && typeof info.linkUrl === 'string' && info.linkUrl.startsWith('http')) {
+    return info.linkUrl;
+  }
+  const text = (info && typeof info.selectionText === 'string') ? info.selectionText.trim() : '';
+  if (!text) return null;
+
+  // Heuristics: if it looks like a URL but missing scheme, prepend https://
+  let candidate = text;
+  if (!/^https?:\/\//i.test(candidate) && /[\w.-]+\.[a-z]{2,}/i.test(candidate)) {
+    candidate = `https://${candidate}`;
+  }
+  try {
+    const u = new URL(candidate);
+    if (u.protocol === 'http:' || u.protocol === 'https:') {
+      return u.toString();
+    }
+  } catch (e) {
+    return null;
+  }
+  return null;
 }
 
 /**
