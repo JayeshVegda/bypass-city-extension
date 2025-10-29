@@ -19,6 +19,17 @@ const KNOWN_AD_DOMAINS = [
   "thedragonslayer2.github.io", "subfinal.com"
 ];
 
+// Domains that should not be auto-bypassed; ensure they are removed from saved settings
+const REMOVED_PASTE_DOMAINS = [
+  "pastebin.com", "pastelink.net", "pastesite.com",
+  "rentry.co", "controlc.com", "paste.work.ink",
+  "privatebin.net", "paster.so", "hastebin.com",
+  "bstlar.com", "pastedrop.com", "leakutopia.com",
+  "leakslinks.com", "goldpaster.com", "pastes.io",
+  "linkdirect.com", "n0paste.com", "pasteflash.com",
+  "leaked.tools"
+];
+
 const smartBypassToggle = document.getElementById('smart-bypass-toggle');
 const domainCount = document.getElementById('domain-count');
 const lastBypass = document.getElementById('last-bypass');
@@ -37,6 +48,15 @@ function loadSettings() {
       knownDomains: KNOWN_AD_DOMAINS,
       lastBypassedDomain: null
     };
+
+    // Clean paste-site domains if present in saved settings
+    if (Array.isArray(settings.knownDomains) && settings.knownDomains.length > 0) {
+      const filtered = settings.knownDomains.filter((d) => !REMOVED_PASTE_DOMAINS.includes(d));
+      if (filtered.length !== settings.knownDomains.length) {
+        settings.knownDomains = filtered;
+        chrome.storage.sync.set({ settings });
+      }
+    }
 
             // Update toggle
             smartBypassToggle.checked = settings.smartBypass !== false;

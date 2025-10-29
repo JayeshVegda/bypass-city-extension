@@ -28,6 +28,17 @@ const KNOWN_AD_DOMAINS = [
   "thedragonslayer2.github.io", "subfinal.com"
 ];
 
+// Domains to remove from any previously saved settings (no auto-bypass needed)
+const REMOVED_PASTE_DOMAINS = [
+  "pastebin.com", "pastelink.net", "pastesite.com",
+  "rentry.co", "controlc.com", "paste.work.ink",
+  "privatebin.net", "paster.so", "hastebin.com",
+  "bstlar.com", "pastedrop.com", "leakutopia.com",
+  "leakslinks.com", "goldpaster.com", "pastes.io",
+  "linkdirect.com", "n0paste.com", "pasteflash.com",
+  "leaked.tools"
+];
+
 // Default settings structure
 const DEFAULT_SETTINGS = {
   smartBypass: true,
@@ -240,6 +251,15 @@ function initializeSettings() {
       if (currentSettings.smartBypass === undefined) {
         currentSettings.smartBypass = true;
         needsUpdate = true;
+      }
+
+      // Remove paste-site domains from previously saved knownDomains
+      if (Array.isArray(currentSettings.knownDomains) && currentSettings.knownDomains.length > 0) {
+        const filtered = currentSettings.knownDomains.filter((d) => !REMOVED_PASTE_DOMAINS.includes(d));
+        if (filtered.length !== currentSettings.knownDomains.length) {
+          currentSettings.knownDomains = filtered;
+          needsUpdate = true;
+        }
       }
 
       if (needsUpdate) {
