@@ -20,21 +20,14 @@ A privacy-first Chrome extension that automatically bypasses 45+ known ad link s
 
 ## 📺 Tutorial
 <div align="center">
-  <video
-    controls
-    autoplay
-    muted
-    playsinline
-    loop
-    preload="metadata"
-    poster="tutorial/palette.png"
-    style="max-width: 100%; height: auto; border-radius: 5px;"
-  >
-    <source src="tutorial/main.mp4" type="video/mp4">
-    <source src="https://user-images.githubusercontent.com/20689156/215357783-b69f4339-a681-410f-982a-44655986f0ce.mp4" type="video/mp4">
-    Your browser does not support the video tag. You can
-    <a href="tutorial/main.mp4">download the video here</a>.
-  </video>
+  <a href="https://user-images.githubusercontent.com/20689156/215357783-b69f4339-a681-410f-982a-44655986f0ce.mp4">
+    <img src="tutorial/palette.png" alt="Watch the tutorial video" style="max-width: 100%; height: auto; border-radius: 5px;" />
+  </a>
+  <p>
+    <a href="tutorial/main.mp4">Download MP4</a>
+    ·
+    <a href="https://user-images.githubusercontent.com/20689156/215357783-b69f4339-a681-410f-982a-44655986f0ce.mp4">Alternate link</a>
+  </p>
 </div>
 
 ## ✨ Features
