@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Packaging script to create extension zip
 const fs = require('fs');
 const path = require('path');
@@ -68,13 +69,6 @@ try {
   // Try PowerShell Compress-Archive for Windows
   try {
     const includePaths = filesToInclude.map(f => path.join(rootDir, f));
-    const excludePaths = excludePatterns.flatMap(pattern => {
-      const fullPath = path.join(rootDir, pattern);
-      if (fs.existsSync(fullPath)) {
-        return fullPath;
-      }
-      return null;
-    }).filter(Boolean);
     
     const psCommand = `
       $ErrorActionPreference = 'Stop'

@@ -42,7 +42,7 @@ test.describe('Link Redirector Extension E2E', () => {
     await expect(validationMessage).toContainText('Valid');
   });
 
-  test('should save and load endpoint configuration', async ({ page, context }) => {
+  test('should save and load endpoint configuration', async ({ page }) => {
     await page.goto(`chrome-extension://${extensionPath}/popup/popup.html`);
     
     const input = page.locator('#endpoint-input');

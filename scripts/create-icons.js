@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Script to create placeholder icons
 // In production, replace these with actual icon designs
 
