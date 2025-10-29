@@ -22,12 +22,12 @@ A privacy-first Chrome extension that automatically bypasses 45+ known ad link s
 
 Watch the quick tutorial (MP4):
 
-- 👉 [View tutorial video](tutorial/turorial.mp4)
+- 👉 [View tutorial video](tutorial/tutorial.mp4)
 
 <details>
   <summary>Inline playback (may not render on all viewers)</summary>
 
-  <video src="tutorial/turorial.mp4" controls playsinline style="max-width:100%;border-radius:8px;border:1px solid rgba(0,0,0,.1)"></video>
+  <video src="tutorial/tutorial.mp4" controls playsinline style="max-width:100%;border-radius:8px;border:1px solid rgba(0,0,0,.1)"></video>
 
   If the video doesn't play inline, use the link above.
 </details>
