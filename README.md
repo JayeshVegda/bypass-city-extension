@@ -20,9 +20,13 @@ A privacy-first Chrome extension that automatically bypasses 45+ known ad link s
 
 ## 📺 Tutorial
 <div align="center">
-  <video src="https://cdn.jsdelivr.net/gh/JayeshVegda/bypass-city-extension@main/tutorial/main.mp4"></video>
-  <p>
-    <a href="https://cdn.jsdelivr.net/gh/JayeshVegda/bypass-city-extension@main/tutorial/main.mp4">Download MP4</a>
+  
+
+  <p align="center">
+  <img src="tutorial/try.gif" width="600" alt="Demo">
+  </p>
+    <p>
+    <a href="https://cdn.jsdelivr.net/gh/JayeshVegda/bypass-city-extension@main/tutorial/main.mp4">Better Quality</a>
   </p>
 </div>
 
